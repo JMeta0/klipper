@@ -1,0 +1,18 @@
+name: Klipper-SKR
+
+on:
+  push:
+    branches: [ SKR-Mini-E3-2.0 ]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    #- name: Install dependencies
+    #  run: ./scripts/install-ubuntu-18.04.sh
+    - name: Make Klipper
+      run: make
