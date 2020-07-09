@@ -15,6 +15,6 @@ jobs:
     #- name: Install dependencies
     #  run: ./scripts/install-ubuntu-18.04.sh
     - name: Install dependencies
-      run: apt-get install build-essential
+      run: sudo apt-get install build-essential
     - name: Make Klipper
       run: make
